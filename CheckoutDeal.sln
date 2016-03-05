@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutDeal", "CheckoutDeal\CheckoutDeal.csproj", "{9081C7D2-6884-4647-A73A-A1304801EC4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutDealWS", "CheckoutDealWS\CheckoutDealWS.csproj", "{F04263D9-02EC-4B88-AFCB-41169D2689FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutDealDAL", "CheckoutDealDAO\CheckoutDealDAL.csproj", "{DE7D1312-E09D-4B1E-9FC0-8E2610B63102}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9081C7D2-6884-4647-A73A-A1304801EC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9081C7D2-6884-4647-A73A-A1304801EC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9081C7D2-6884-4647-A73A-A1304801EC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9081C7D2-6884-4647-A73A-A1304801EC4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F04263D9-02EC-4B88-AFCB-41169D2689FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04263D9-02EC-4B88-AFCB-41169D2689FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04263D9-02EC-4B88-AFCB-41169D2689FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04263D9-02EC-4B88-AFCB-41169D2689FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7D1312-E09D-4B1E-9FC0-8E2610B63102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7D1312-E09D-4B1E-9FC0-8E2610B63102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7D1312-E09D-4B1E-9FC0-8E2610B63102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7D1312-E09D-4B1E-9FC0-8E2610B63102}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
