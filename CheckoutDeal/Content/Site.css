@@ -1,13 +1,4 @@
-﻿body {
-    font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    color: #232323;
-    background-color: #fff;
-}
-
-header, footer, nav, section {
-    display: block;
-}
+﻿
 
 
 /* Styles for basic forms
@@ -59,3 +50,51 @@ textarea {
 .validation-summary-valid {
     display: none;
 }
+
+/* Start of our css
+    home page css
+-----------------------------------------------------------*/
+.logo-container {
+    height:50px;
+    margin: 15px 15px 0;
+}
+/*===================Menu styles====================*/
+.navbar-cd, .navbar-cd li {
+  background-image: -webkit-linear-gradient(top, #F8873D 0%, #F9690A 100%);
+  background-image:      -o-linear-gradient(top, #F8873D 0%, #F9690A 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F8873D), to(#F9690A));
+  background-image:         linear-gradient(to bottom, #F8873D 0%, #F9690A 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffF8873D', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-radius: 0px;
+}
+.navbar-cd .navbar-nav > .open > a,
+.navbar-cd .navbar-nav > .active > a,
+.navbar-cd .navbar-nav li:hover {
+  background-image: -webkit-linear-gradient(top, #108604 0%, #063701 100%);
+  background-image:      -o-linear-gradient(top, #108604 0%, #063701 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#108604), to(#063701));
+  background-image:         linear-gradient(to bottom, #108604 0%, #063701 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff108604', endColorstr='#ff063701', GradientType=0);
+  background-repeat: repeat-x;
+  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
+          box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
+}
+.navbar-cd .navbar-brand,
+.navbar-cd .navbar-nav > li > a {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+  color: #108604;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color:#108604;
+}
+/*===================Center align  menu====================*/
+.navbar-cd .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+.navbar-cd .navbar-nav > li {
+      float: none;
+      display: inline-block;    
+  }

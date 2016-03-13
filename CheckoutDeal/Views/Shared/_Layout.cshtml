@@ -4,13 +4,75 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/css")
 </head>
 <body>
-    @RenderBody()
-    
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="logo-container"><img class="img-responsive" src="@Url.Content("~/Content/images/cdlogo.png")" /></div>
+            <nav class="navbar navbar-inverse navbar-cd">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Computers
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Desktops</a></li>
+                                    <li><a href="#">Notebooks</a></li>
+                                    <li><a href="#">Software</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Electronics
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Camera & photo</a></li>
+                                    <li><a href="#">Cell phones</a></li>
+                                    <li><a href="#">Others</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Apparel
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Clothing</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Digital downloads</a></li>
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Jewelry</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            @RenderBody()
+
+            @Scripts.Render("~/bundles/jquery")
+            @RenderSection("scripts", required: false)
+        </div>
+    </div>
 </body>
 </html>
